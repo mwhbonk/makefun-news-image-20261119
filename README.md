@@ -10,8 +10,8 @@ Sum up 19 November's world news in one image: a program that writes one image of
 
 "The World in One Page" — a newspaper front page for Thursday 19 November 2026 with **40 stories across 6 continents**:
 
-- **Lead:** the ICJ delivers its judgment in The Gambia v. Myanmar at 10am in The Hague — the first-ever ruling on whether a state committed genocide against the Rohingya.
-- **Second story:** the first-ever Trump–Xi–Putin trilateral meets in Shenzhen on the APEC sidelines — nuclear arms and the Iran war on the table, Ukraine not on the agenda.
+- **Lead:** the ICJ rules 9–6 that Myanmar committed genocide against the Rohingya in 2017 — the first time the World Court has found a state guilty of genocide. 10,000 killed, 700,000 driven into Bangladesh; Myanmar ordered to pay restitution and compensation.
+- **Second story:** the first-ever Trump–Xi–Putin trilateral meets in Shenzhen and signs a four-point "peace declaration" — nuclear talks, oil supply, UN reform, ICC limits — but no deal on Ukraine or Iran, and no arms treaty.
 - **Third story:** GTA VI launches worldwide after a 13-year wait; preorders top $1.5bn.
 - **Plus 37 more:** Cyclone Akvan bearing down on the Bengal coast, the EU's €45bn Ukraine loan, Hakeem Jeffries nominated for Speaker (251–11), Voyager 1 nearing one light-day, and stories from every continent — Asia, Europe, Africa, the Americas, Oceania and the wider world.
 

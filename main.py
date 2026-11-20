@@ -10,16 +10,17 @@ exact PNG bytes to the output path, so both sandbox runs produce
 identical bytes.
 
 The page carries 40 verified stories from Thursday 19 November 2026
-across 6 continents: the ICJ delivers its Rohingya genocide judgment in
-The Hague, the first-ever Trump-Xi-Putin trilateral meets in Shenzhen,
+across 6 continents: the ICJ rules 9-6 that Myanmar committed genocide
+against the Rohingya in 2017, the first-ever Trump-Xi-Putin trilateral
+ends with a peace declaration but no deal on Ukraine or Iran,
 GTA VI launches worldwide after a 13-year wait, plus 37 more — Cyclone
 Akvan, the EU's EUR 45bn Ukraine loan, Jeffries' Speaker nomination,
 Voyager 1's light-day milestone and a world of smaller stories.
 
 No network access, no randomness, no third-party dependencies: only the
 Python 3.13 standard library is used. Deterministic by construction.
-Verified 2026-11-19: two local runs wrote identical bytes
-(sha256 7678ac3688019f7301fe629879c05caa43692252c40d897f99d6810c86651bc8).
+Verified 2026-11-20: two local runs wrote identical bytes
+(sha256 bd9f6a8abcd918e2ddc8c0f7f24ef0e7880ee518d9cbbef5d91bf3b9a59cdce9).
 """
 
 import base64

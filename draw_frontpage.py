@@ -2,9 +2,10 @@
 """Draw the news-image-20261119 front page: 'The World in One Page'.
 
 Thursday 19 November 2026 - 40 stories, 6 continents, one page.
-Lead: the ICJ delivers its judgment in The Gambia v. Myanmar at 10am in
-The Hague - the first-ever ruling on whether a state committed genocide.
-Second story: the first-ever Trump-Xi-Putin trilateral in Shenzhen.
+Lead: the ICJ rules 9-6 that Myanmar committed genocide against the
+Rohingya in 2017 - the first state ever found guilty of genocide.
+Second story: the first-ever Trump-Xi-Putin trilateral in Shenzhen ends
+with a four-point peace declaration but no deal on Ukraine or Iran.
 Third: GTA VI launches worldwide after a 13-year wait.
 Verified against Reuters, AP, BBC, The Hindu, NDTV, FT and UN reporting
 for 18-19 Nov 2026. Hero: generated illustration of the Peace Palace.
@@ -73,7 +74,7 @@ def hero_crop(box_w, box_h):
 
 # (region, headline, deck) - 37 grid stories; lead + 2 strips make 40.
 ITEMS = [
-    ("ASIA", "Cyclone Akvan nears Bengal coast", "Landfall due Machilipatnam-Puri."),
+    ("ASIA", "Cyclone Akvan bears down on Odisha", "Landfall due Friday near Gopalpur; 72,000 evacuated."),
     ("ASIA", "Modi meets William and Kate", "UK-India ties top the agenda."),
     ("ASIA", "India, Japan review defence ties", "Ministers meet in Tokyo."),
     ("ASIA", "Iran widens Gulf attacks", "Kuwait base hit; Bahrain struck again."),
@@ -127,11 +128,11 @@ def main():
 
     # ---- lead: ICJ judgment, hero right ----
     d.text((M, 136), "THE HAGUE  \u2022  WORLD COURT", font=font(SANS_B, 14), fill=COL["EUROPE"])
-    d.text((M, 156), "WORLD COURT", font=font(SERIF_B, 33), fill=INK)
-    d.text((M, 194), "RULES TODAY", font=font(SERIF_B, 33), fill=INK)
-    deck = ("The ICJ reads its judgment in The Gambia v. Myanmar "
-            "at 10am: did a state commit genocide against the "
-            "Rohingya? The first such ruling ever.")
+    d.text((M, 156), "MYANMAR GUILTY", font=font(SERIF_B, 33), fill=INK)
+    d.text((M, 194), "OF GENOCIDE", font=font(SERIF_B, 33), fill=INK)
+    deck = ("The world court rules 9-6: Myanmar committed genocide "
+            "against the Rohingya in 2017 - the first state ever "
+            "found guilty of genocide.")
     y = 236
     for ln in wrap(d, deck, font(SERIF, 16), 560):
         d.text((M, y), ln, font=font(SERIF, 16), fill=INK)
@@ -140,15 +141,15 @@ def main():
     img.paste(hero_crop(hw, hh), (hx, hy))
     d.rectangle([hx, hy, hx + hw, hy + hh], outline=INK, width=2)
     d.rectangle([hx, hy + hh - 26, hx + hw, hy + hh], fill=(15, 118, 110))
-    d.text((hx + hw // 2, hy + hh - 22), "PEACE PALACE  \u2022  10AM VERDICT",
+    d.text((hx + hw // 2, hy + hh - 22), "PEACE PALACE  \u2022  9-6 VERDICT",
            font=font(SANS_B, 13), fill=WHITE, anchor="ma")
 
     # ---- strip 1: trilateral ----
     ty = 318
     d.rectangle([M, ty, W - M, ty + 40], fill=INK)
-    d.text((M + 14, ty + 4), "TRUMP, XI AND PUTIN MEET IN SHENZHEN  \u2022  ",
+    d.text((M + 14, ty + 4), "TRUMP, XI, PUTIN: PEACE DECLARATION, NO DEAL  \u2022  ",
            font=font(SANS_B, 15), fill=(255, 213, 79))
-    d.text((M + 14, ty + 22), "First-ever trilateral at APEC: nuclear arms and the Iran war on the table",
+    d.text((M + 14, ty + 22), "Four-point pact on nuclear talks, oil and the UN - but nothing on Ukraine or Iran",
            font=font(SANS, 14), fill=WHITE)
     d.text((W - M - 14, ty + 4), "ASIA", font=font(SANS_B, 15), fill=(255, 213, 79), anchor="ra")
 
